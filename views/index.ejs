@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Posts</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Elite Posts</h1>
+      <% for(post of posts) { %>
+      <div class="post-card">
+        <h3 class="username">@<%= post.username %></h3>
+        <p class="vibe">Vibes are - <span><%= post.vibe %></span></p>
+        <div class="options">
+          <div>
+            <a href="posts/<%= post.id %>"><button>View in Detail</button></a>
+          </div>
+          <div>
+            <a href="posts/<%= post.id %>/edit"
+              ><button class="green">Edit Post</button></a
+            >
+          </div>
+          <div>
+            <form action="/posts/<%= post.id %>?_method=DELETE" method="post">
+              <button class="red">Delete Post</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <% } %>
+      <a href="posts/new"><button>Create New Post</button></a>
+    </div>
+  </body>
+</html>

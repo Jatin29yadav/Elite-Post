@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit post</h1>
+      <div class="post-card">
+        <h3 class="vibe">Post ID : <span> <%= post.id %></span></h3>
+        <h3 class="username">@<%= post.username %></h3>
+        <form
+          class="form"
+          action="/posts/<%= post.id %>?_method=PATCH"
+          method="post"
+        >
+          <textarea name="vibe"><%= post.vibe %></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

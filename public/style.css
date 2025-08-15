@@ -1,0 +1,161 @@
+* {
+  font-family: "K2D", sans-serif;
+}
+body {
+  background: whitesmoke;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.post-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.username {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.vibe {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.vibe span {
+  font-weight: 600;
+  color: #28a745;
+}
+
+.form {
+  background: #fff;
+  padding: 25px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+}
+
+form input,
+form textarea {
+  width: 93%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  font-family: "K2D", sans-serif;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.options {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.red {
+  width: 100%;
+  padding: 12px;
+  background: #ff0000;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+.red:hover {
+  transform: scale(0.98);
+}
+.red:active {
+  transform: scale(1);
+}
+.green {
+  width: 100%;
+  padding: 12px;
+  background: #00b324;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+.green:hover {
+  transform: scale(0.98);
+}
+.green:active {
+  transform: scale(1);
+}
